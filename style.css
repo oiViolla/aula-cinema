@@ -35,3 +35,32 @@ header a {
     padding: 30px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+/*Configuração da aula de 23/09*/
+.info-principal{
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+    align-items: center;
+} 
+.texto-sinopse{
+    flex: 1;
+}
+table {
+    width:100%;
+    margin-top: 15px;
+    border-collapse:collapse;
+}
+th,td {
+    border:1px solid white;
+    padding: 10px;
+    text-align:center ;
+}
+th {
+    background-color: brown;
+    color: white;
+}
+tbody tr:hover{
+    background-color: rgb(0, 183, 255)
+}
+
