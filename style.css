@@ -29,6 +29,7 @@ header a {
 .ativa {
     color: yellow
 }
+
 .catalogo-filme{
     display: grid;
     gap: 20px;
@@ -42,25 +43,200 @@ header a {
     gap: 30px;
     margin: 40px;
     align-items: center;
-} 
-.texto-sinopse{
+}
+
+.texto-sinopse {
     flex: 1;
 }
+
 table {
-    width:100%;
+    width: 100%;
     margin-top: 15px;
-    border-collapse:collapse;
+    border-collapse: collapse;
 }
-th,td {
-    border:1px solid white;
+
+th, td {
+    border: 1px solid white;
     padding: 10px;
-    text-align:center ;
+    text-align: center;  
 }
+
 th {
     background-color: brown;
     color: white;
 }
-tbody tr:hover{
-    background-color: rgb(0, 183, 255)
+
+tbody tr:hover {
+    background-color: antiquewhite;
 }
 
+/* --- ESTILO DO FORMULÁRIO DE CADASTRO --- */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.container-cadastro {
+    max-width: 500px;
+    margin: 40px auto; /* Centraliza o container na horizontal */
+    padding: 0 20px;
+}
+
+.container-cadastro h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column; /* Empilha os rótulos e campos */
+    gap: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    color: #0056b3;
+    padding: 0 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+}
+
+/* Efeito ao clicar dentro do campo */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.4);
+}
+
+/* Alinhamento dos botões de rádio */
+.opcoes-radio {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.opcoes-radio label {
+    font-weight: normal;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.opcoes-radio input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Botão de Envio */
+.btn-comprar {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #218838;
+}
+
+/* Estilos para JS */
+/* 1. Muda o fundo da página inteira */
+.tema-escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* 2. Muda a cor dos cartazes quando a página estiver no modo escuro */
+.tema-escuro .cartaz-filme {
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05); /* Sombra mais suave e clara */
+    color: #ffffff;
+}
+
+/* 3. Estilo básico */
+.btn-estilo {
+    background-color: transparent;
+    color: green;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-estilo:hover {
+    background-color: white;
+    color: #222;
+}
+
+
+/* Centraliza a seção na tela e afasta dos outros elementos */
+.mapa-assentos {
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Usa o Flexbox para colocar as poltronas lado a lado */
+.fileira {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* O visual da poltrona */
+.assento {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc; 
+    
+    /* Arredonda em cima parecendo um encosto */
+    border-radius: 8px 8px 0 0; 
+    
+    cursor: pointer; /* Muda o cursor para a "mão" de clique */
+    transition: background-color 0.2s; /* Deixa a mudança de cor suave */
+}
+
+/* Efeito ao passar o mouse numa poltrona livre */
+.assento:hover {
+    background-color: #aaa;
+}
+
+/* ESTADO 1: Poltrona indisponível (já comprada) */
+.assento.ocupado {
+    background-color: #444; 
+    cursor: not-allowed; /* Mostra o ícone de bloqueado no mouse */
+}
+
+/* ESTADO 2: Poltrona selecionada  (JS vai injetar essa classe depois) */
+.assento.selecionado {
+    background-color: #28a745; 
+}

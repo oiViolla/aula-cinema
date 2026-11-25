@@ -17,19 +17,19 @@
     <main>
         <section class="info-principal">
             <div class="texto-sinopse">
-                <h2>Homem Aranha</h2>
+                <h2>Homem-Aranha</h2>
                 <p>
                     <strong>Gênero:</strong> Ação <br>
                     <strong>Duração:</strong> 145 min
                 </p>
                 <p align="justify">
                     <strong>Sinopse:</strong> 
-                    Explora a vida de Peter Parker após os acontecimentos de Homem-Aranha: Sem Volta Para Casa. Vivendo em Nova York depois que sua identidade foi apagada da memória de todos, o amigão da vizinhança tenta seguir em frente anonimamente enquanto concilia a rotina universitária com a missão de proteger a cidade como super-herói. Sem poder contar com seus amigos e obrigado a enfrentar tudo sozinho, Peter busca se reencontrar ao mesmo tempo em que se sente invisível e vê sua namorada vivendo novas experiências. Porém, uma série de acontecimentos coloca a cidade em perigo novamente, fazendo com que ele enfrente vilões cada vez mais poderosos e tome decisões que colocarão à prova seus valores e o verdadeiro significado do sacrifício, mostrando que, de fato, com grandes poderes vêm grandes responsabilidades. Em uma jornada marcada por recomeços, Peter precisará descobrir se é possível adaptar-se à nova realidade sem abrir mão daquilo que faz dele o Homem-Aranha
+                    Explora a vida de Peter Parker após os acontecimentos de Homem-Aranha: Sem Volta Para Casa. Vivendo em Nova York depois que sua identidade foi apagada da memória de todos, o amigão da vizinhança tenta seguir em frente anonimamente enquanto concilia a rotina universitária com a missão de proteger a cidade como super-herói. Sem poder contar com seus amigos e obrigado a enfrentar tudo sozinho, Peter busca se reencontrar ao mesmo tempo em que se sente invisível e vê sua namorada vivendo novas experiências. Porém, uma série de acontecimentos coloca a cidade em perigo novamente, fazendo com que ele enfrente vilões cada vez mais poderosos e tome decisões que colocarão à prova seus valores e o verdadeiro significado do sacrifício, mostrando que, de fato, com grandes poderes vêm grandes responsabilidades. Em uma jornada marcada por recomeços, Peter precisará descobrir se é possível adaptar-se à nova realidade sem abrir mão daquilo que faz dele o Homem-Aranha.
                 </p>
             </div>
             
             <div>
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/PlulyWs1kS4?si=yN3s5JJfjtYTlZsZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PlulyWs1kS4?si=M2yoBEl6B6-nQNmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -46,15 +46,38 @@
                     <tr>
                         <td>Sala 01</td>
                         <td>10:00 | 15:30 | 19:50</td>
-                        <td> <a href="cadastro.html">Comprar</a></td>
+                        <td><a href="cadastro.html">Comprar</a></td>
                     </tr>
-                      <tr>
+                    <tr>
                         <td>Sala 07</td>
-                        <td>13:00 | 16:30 | 20:00</td>
-                        <td> <a href="cadastro.html">Comprar</a></td>
+                        <td>13:00 | 16:30 | 22:00</td>
+                        <td><a href="cadastro.html">Comprar</a></td>
                     </tr>
                 </tbody>
             </table>
         </section>
+
+        <!-- Mapa de assentos -->
+        <section class="mapa-assentos">
+            <h3>Selecione suas poltronas:</h3>
+           
+            <!-- O span guardará o número de poltronas que o JS vai calcular -->
+            <p>Ingressos selecionados: <span id="contador">0</span></p>
+           
+            <div class="fileira">
+                <div class="assento"></div>
+                <div class="assento"></div>
+               
+                <!-- A classe 'ocupado' simula uma poltrona que já foi vendida -->
+                <div class="assento ocupado"></div>
+               
+                <div class="assento"></div>
+                <div class="assento"></div>
+            </div>
+        </section> 
+        <p>Total a pagar: R$ <span id="total">0,00</span></p>
+        <button id="btn-confirmar" class="btn-comprar">Confirmar reserva</button>   
     </main>
- </body>   
+    <script src="script.js"></script>
+ </body>
+ </html>   

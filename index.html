@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <title>CineREDES - Cátalogo</title>
 <head>
-   
-    <title>CibeRedes</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <title>CineREDES - Catálogo</title>
 </head>
 <body>
     <header>
         <h1>CineREDES</h1>
         <nav>
             <a href="index.html" class="ativa">Filmes</a>
-            <a href="sessoes.html">Salas e Sessões</a>
-            <a href="cadastro.html">Clientes e Ingressos</a>
+            <a href="sessoes.html">Sessões</a>
+            <a href="cadastro.html">Ingressos</a>
         </nav>
     </header>
-    <main class="catalogo-filme">
-     <article class="cartaz-filme"> 
-        <img src="filme1.jpg" alt="Capa do Filme Homem Aranha" width="200px" height="300px">
-        <h2>Homem Aranha</h2>
-        <p>Ação | 145 minutos</p>
-        <button>Ver detalher</button>    
-    </article>
-     
-    <article class="cartaz-filme"> 
-        <img src="filme2.jpg" alt="Capa do Filme Odisseia" width="200px" height="300px">
-        <h2>A Odisseia</h2>
-        <p>Fantasia | 172 minutos</p>
-        <button>Ver detalher</button>    
-    </article>  
 
-     <article class="cartaz-filme"> 
-        <img src="filme3.jpg" alt="Toy Story" width="200px" height="300px">
-        <h2>Toy Story</h2>
-        <p>Animação | 102 minutos</p>
-        <button>Ver detalher</button>    
-    </article>  
-     
-    <article class="cartaz-filme"> 
-        <img src="filme4.jpg" alt="Capa do filme Michael" width="200px" height="300px">
-        <h2>Michael</h2>
-        <p>Cinebiografia| 127 minutos</p>
-        <button>Ver detalher</button>    
-    </article>  
-    <article class="cartaz-filme"> 
-        <img src="filme5.jpg" alt="Capa do filme Super Mario" width="200px" height="300px">
-        <h2>Super Mario</h2>
-        <p>Animação | 98 minutos</p>
-        <button>Ver detalher</button>    
-    </article>  
+    <br>
+    <button id="btn-tema" class="btn-estilo">🌙 Modo escuro</button>
+    <main class="catalogo-filme">
+        <article class="cartaz-filme">
+            <img src="filme1.jpg" alt="Capa do filme Homem Aranha" width="200px" height="300px">
+            <h2>Homem-Aranha</h2>
+            <p>Ação | 145 minutos</p>
+            <a href="sessoes.html">Ver filme</a>
+        </article>
+        
+        <article class="cartaz-filme">
+            <img src="filme2.jpg" alt="Capa do filme Odisseia" width="200px" height="300px">
+            <h2>A Odisseia</h2>
+            <p>Fantasia | 172 minutos</p>
+            <a href="sessoes-filme2.html">Ver filme</a>
+        </article>
+
+        <article class="cartaz-filme">
+            <img src="filme3.jpg" alt="Capa do filme Toy Story" width="200px" height="300px">
+            <h2>Toy Story 5</h2>
+            <p>Animação | 102 minutos</p>
+            <a href="sessoes-filme3.html">Ver filme</a>
+        </article>
+
+        <article class="cartaz-filme">
+            <img src="filme4.jpg" alt="Capa do filme Michael" width="200px" height="300px">
+            <h2>Michael</h2>
+            <p>Cinebiografia | 127 minutos</p>
+            <a href="sessoes-filme4.html">Ver filme</a>
+        </article>
+
+        <article class="cartaz-filme">
+            <img src="filme5.jpg" alt="Capa do filme Super Mario" width="200px" height="300px">
+            <h2>Super Mario</h2>
+            <p>Animação | 98 minutos</p>
+            <a href="sessoes-filme5.html">Ver filme</a>
+        </article>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

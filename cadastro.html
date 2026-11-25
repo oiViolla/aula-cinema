@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CineREDES - Sessões</title>
+</head>
+<body>
+    <header>
+        <h1>CineREDES</h1>
+        <nav>
+            <a href="index.html">Filmes</a>
+            <a href="sessoes.html">Sessões</a>
+            <a href="cadastro.html" class="ativa">Ingressos</a>
+        </nav>
+    </header>
+    <main class="container-cadastro">
+        <h2>Compra de ingresso</h2>
+        <form action="">
+            <fieldset>
+                <legend>Cliente</legend>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Por exemplo, Fábio Procópio" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="fabioprocopio693@gmail.com" required>
+            </fieldset>
+
+             <fieldset>
+                <legend>Ingresso</legend>
+                <label for="filme">Filme</label>
+                <select id="filme" name="filme" required>
+                    <option value="" disabled selected>Selecione um filme...</option>
+                    <option value="1">Homem-Aranha</option> 
+                    <option value="2">A Odisseia</option> 
+                    <option value="3">Toy Story 5</option> 
+                    <option value="4">Michael</option> 
+                    <option value="5">Super Mario</option>    
+                </select>
+
+                <label>Entrada</label>
+                <div class="opcoes-radio">
+                    <input type="radio" id="inteira" name="entrada" value="inteira" checked>
+                    <label for="inteira">Inteira</label>
+                    <input type="radio" id="meia" name="entrada" value="meia">
+                    <label for="meia">Meia entrada</label>    
+                </div>   
+             </fieldset>   
+             <button type="submit" class="btn-comprar">Finalizar compra</button>
+        </form>    
+    </main>
+ </body>   
